@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'package:mp3player2/PlayScreen.dart';
+
 import 'Home.dart';
 import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
@@ -19,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(Duration(seconds: 5), () {
       return Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (BuildContext context) => Home()));
+          MaterialPageRoute(builder: (BuildContext context) => PlayScreen()));
     });
   }
 
